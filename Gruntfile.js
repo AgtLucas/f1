@@ -136,9 +136,18 @@ module.exports = function (grunt) {
       }
     },
 
-    
+    sass: {
+      dist: {
+        options: {
+          outputStyle: 'compressed'
+        },
+        files: {
+          'main.css': 'main.scss'
+        }
+      }
+    },
 
-    
+
 
     // Renames files for browser caching purposes
     rev: {
